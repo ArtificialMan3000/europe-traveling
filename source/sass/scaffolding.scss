@@ -16,10 +16,6 @@ body {
   // background-color: red;
 }
 
-.site-wrapper {
-  overflow: hidden;
-}
-
 a {
   text-decoration: none;
 }
@@ -27,4 +23,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

@@ -1,42 +1,46 @@
 //Breakpoints
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1300px;
+$desktop-width: 1024px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 //Content widthes
-$mobile-content-width: 280px;
-$tablet-content-width: 708px;
-$desktop-content-width: 1220px;
+// $mobile-content-width: 320px;
+// $tablet-content-width: 768px;
+// $desktop-content-width: 1024px;
 
 //Font
-$title-font-family: "Font Name", "Arial", sans-serif;
-$text-font-family: "Arial", sans-serif;
+$text-font-family: "Monseratt", "Arial", sans-serif;
 
-$text-font-size: 14px;
-$text2-font-size: 16px;
-$small-font-size: 12px;
-$title1-font-size: 36px;
-$title2-font-size: 24px;
-$title3-font-size: 16px;
+// $smaller-font-size: 14px;
+// $normal-font-size: 16px;
+// $larger-font-size: 18px;
+// $large-font-size: 20px;
+// $extralarge-font-size: 24px;
 
-$text-line-height: 18px;
-$text2-line-height: 24px;
+$small-text-font-size: 14px;
+$text-font-size: 16px;
+$title1-mobile-font-size: 24px;
+$title1-tablet-font-size: 30px;
+$title1-desktop-font-size: 55px;
+
+$text-line-height: 28px;
 
 //Colors
-$brand-color: #68b738;
-$brand-color-dark: #64a83b;
+$brand-color: #FE7865;
+$brand-hover-color: #F17D4B;
 
-$title-color: #111111;
-$title-color2: #222222;
-$text-color: #444444;
+$title-color: #2C2E3F;
+$text-color: rgba(44, 46, 63, 0.7);
 
 $white: #ffffff;
-$gray-light: #f2f2f2;
+$light: #f8f8f8;
+$dark: #2C2E3F;
+$darkest: #141517;
 
 //Sizes
-$mobile-external-paddings: 20px;
-$tablet-external-paddings: 30px;
-$desktop-external-paddings: 40px;
+$mobile-external-paddings: 16px;
+$tablet-external-paddings: 21px;
+// $desktop-external-paddings: 40px;
