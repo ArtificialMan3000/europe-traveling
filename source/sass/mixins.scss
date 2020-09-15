@@ -21,67 +21,28 @@
   font-weight: 400;
 }
 
-// //Внешние паддинги по краям страницы
-// @mixin ext-paddings() {
-//   padding-left: $mobile-external-paddings;
-//   padding-right: $mobile-external-paddings;
-
-//   @media (min-width: $tablet-width) {
-//     padding-left: $tablet-external-paddings;
-//     padding-right: $tablet-external-paddings;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     padding-left: $desktop-external-paddings;
-//     padding-right: $desktop-external-paddings;
-//   }
-// }
-
 //Центровщик
 @mixin container() {
-  // @include ext-paddings();
-  // width: $mobile-width;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: $mobile-external-paddings;
-  padding-right: $mobile-external-paddings;
+  // max-width: $desktop-width-max;
+  // margin: 0 auto;
+  // padding-left: calc(50% - (#{$desktop-width-max} / 2) + #{$desktop-external-paddings});
+  // padding-right: calc(50% - (#{$desktop-width-max} / 2) + #{$desktop-external-paddings});
+  padding-left: calc-external-padding($desktop-external-paddings);
+  padding-right: calc-external-padding($desktop-external-paddings);
 
-  @media (min-width: $tablet-width) {
-    // width: $tablet-width;
+  @media (max-width: $desktop-width-max) {
+    padding-left: $desktop-external-paddings;
+    padding-right: $desktop-external-paddings;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-left: $tablet-external-paddings;
+    padding-right: $tablet-external-paddings;
+  }
+
+  @media (max-width: $mobile-width-max) {
     padding-left: $mobile-external-paddings;
     padding-right: $mobile-external-paddings;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   width: $desktop-width;
-  // }
 }
-
-// //Центровщик только для планшетной ширины
-// @mixin container-tablet() {
-//   @media (min-width: $tablet-width) {
-//     width: $tablet-width;
-//     max-width: 1440px;
-//     margin: 0 auto;
-//     padding-left: $tablet-external-paddings;
-//     padding-right: $tablet-external-paddings;
-//   }
-// }
-// //Центровщик только для десктопной ширины
-// @mixin container-desktop() {
-//   @media (min-width: $desktop-width) {
-//     width: $desktop-width;
-//     max-width: 1440px;
-//     margin: 0 auto;
-//     padding-left: $desktop-external-paddings;
-//     padding-right: $desktop-external-paddings;
-//   }
-// }
-// //Сброс центровщика
-// @mixin container-reset() {
-//   width: auto;
-//   margin: 0;
-//   padding-left: 0;
-//   padding-right: 0;
-// }

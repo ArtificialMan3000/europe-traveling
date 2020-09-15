@@ -1,0 +1,54 @@
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__inner {
+  width: 728px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url(../img/modal-bg.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: none;
+  }
+}
+
+.modal__close {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url(../img/cross.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

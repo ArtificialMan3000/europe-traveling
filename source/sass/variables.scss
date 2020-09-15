@@ -1,7 +1,10 @@
 //Breakpoints
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
+$desktop-width-max: 1230px;
+$desktop-width-min: 1024px;
+$tablet-width-max: 1023px;
+$tablet-width-min: 768px;
+$mobile-width-max: 767px;
+$mobile-width-min: 320px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
@@ -12,7 +15,7 @@ $retina-dppx: 1.5dppx;
 // $desktop-content-width: 1024px;
 
 //Font
-$text-font-family: "Monseratt", "Arial", sans-serif;
+$text-font-family: "Montserrat", "Arial", sans-serif;
 
 // $smaller-font-size: 14px;
 // $normal-font-size: 16px;
@@ -32,7 +35,7 @@ $text-line-height: 28px;
 $brand-color: #FE7865;
 $brand-hover-color: #F17D4B;
 
-$title-color: #2C2E3F;
+$title-color: rgba(44, 46, 63, 1);
 $text-color: rgba(44, 46, 63, 0.7);
 
 $white: #ffffff;
@@ -41,6 +44,9 @@ $dark: #2C2E3F;
 $darkest: #141517;
 
 //Sizes
-$mobile-external-paddings: 16px;
+$desktop-external-paddings: 30px;
 $tablet-external-paddings: 21px;
-// $desktop-external-paddings: 40px;
+$mobile-external-paddings: 16px;
+
+$mobile-button-width: 288px;
+$tablet-button-width: 250px;

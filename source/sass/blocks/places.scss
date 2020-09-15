@@ -1,0 +1,137 @@
+.places {
+  margin-top: 200px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 108px;
+  }
+}
+
+.places__title {
+  max-width: 400px;
+  margin: 0;
+  margin-bottom: 31px;
+  padding-bottom: 33px;
+  position: relative;
+  font-size: $title1-desktop-font-size;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -1.25px;
+  color: $title-color;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: $title1-tablet-font-size;
+    line-height: 45px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    letter-spacing: 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: $title1-mobile-font-size;
+    line-height: 36px;
+  }
+}
+
+.places__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 228px;
+  height: 4px;
+  background-color: $brand-color;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.places__text {
+  max-width: 330px;
+  margin: 0;
+  margin-bottom: 55px;
+  letter-spacing: -0.47px;
+  color: $text-color;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 20px;
+  }
+}
+
+.places__cards {
+  @extend .list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -101px;
+
+  @media (max-width: $tablet-width-max) {
+    justify-content: center;
+    padding-left: 6.336%;
+    padding-right: 6.336%;
+    margin-bottom: -19px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: -35px;
+  }
+}
+
+.places__card {
+  width: 29.9%;
+  margin-right: 5.128%;
+  margin-bottom: 101px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 2.066%;
+    margin-right: 2.066%;
+    margin-bottom: 19px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
+
+// Ставится на предпоследнюю карточку, если в последнем ряду остаётся две карточки
+.places__card--pre-last {
+  @media (min-width: $desktop-width-min) {
+    margin-left: 14.957%;
+  }
+}
+
+.places__card--last {
+  margin-left: auto;
+  margin-right: 14.957%;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 12px;
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 0;
+  }
+}
+
+.places__card:nth-child(3n) {
+  @media (min-width: $desktop-width-min) {
+    margin-right: 0;
+  }
+}

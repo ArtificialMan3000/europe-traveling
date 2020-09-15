@@ -1,0 +1,103 @@
+.main-block {
+  min-height: 860px;
+  padding-left: 59.37%;
+  padding-top: 185px;
+  background-image: url("../img/main-block-desktop-bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #498BD3;
+  color: $white;
+
+  @media (max-width: $tablet-width-max) {
+    min-height: 344px;
+    padding-left: calc(50% - (400px / 2));
+    padding-right: calc(50% - (400px / 2));
+    padding-top: 60px;
+    background-image: url("../img/main-block-tablet-bg.jpg");
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-image: none;
+    background-color: transparent;
+  }
+}
+
+.main-block__title {
+  max-width: 415px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: $title1-desktop-font-size;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -1.10667px;
+  color: $white;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 100%;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    min-height: 235px;
+    padding-left: calc((100% - 294px) / 2 + 3px);
+    padding-right: calc((100% - 294px) / 2 - 3px);
+    padding-top: 82px;
+    padding-bottom: 81px;
+    background-image: url("../img/main-block-mobile-bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #498BD3;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.main-block__text {
+  max-width: 380px;
+  margin: 0;
+  margin-bottom: 33px;
+  line-height: 27px;
+  letter-spacing: -0.466667px;
+  color: $white;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: $mobile-external-paddings;
+    padding-right: $mobile-external-paddings;
+    color: $dark;
+  }
+}
+
+.main-block__button {
+  width: 340px;
+  text-align: left;
+
+  @media (max-width: $tablet-width-max) {
+    width: $tablet-button-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-button-width;
+  }
+}

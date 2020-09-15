@@ -1,0 +1,15 @@
+.email {
+  display: block;
+  padding-left: 41px;
+  text-decoration: underline;
+  color: $brand-color;
+  font-size: $small-text-font-size;
+  line-height: 17px;
+  position: relative;
+}
+
+.email__icon {
+  position: absolute;
+  top: -3px;
+  left: 0;
+}

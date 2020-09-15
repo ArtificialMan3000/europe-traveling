@@ -1,0 +1,49 @@
+.page-header {
+  display: flex;
+  min-height: 99px;
+
+  @media (max-width: $tablet-width-max) {
+    flex-wrap: wrap;
+    min-height: 50px;
+    position: relative;
+  }
+}
+
+.page-header__logo {
+  margin-top: 39px;
+  margin-bottom: 38px;
+  margin-right: 100px;
+  flex-shrink: 0;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 18px;
+    margin-bottom: 14px;
+  }
+}
+
+.page-header__menu {
+  width: 63%;
+  margin-top: 43px;
+  margin-bottom: 39px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.page-header__phone {
+  margin-top: 36px;
+  margin-bottom: 31px;
+  margin-left: 38px;
+  flex-shrink: 0;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.page-header__burger {
+  margin-left: auto;
+}

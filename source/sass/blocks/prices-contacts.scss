@@ -1,0 +1,20 @@
+.prices-contacts {
+  font-style: normal;
+}
+
+.prices-contacts__title {
+  margin: 0;
+  margin-left: 47px;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $darkest;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}

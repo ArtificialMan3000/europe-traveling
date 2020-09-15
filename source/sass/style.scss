@@ -1,5 +1,42 @@
-@import "vendor/normalize.scss";
 @import "fonts.scss";
 @import "variables.scss";
+@import "functions.scss";
 @import "mixins.scss";
+
+// Общие стили
+@import "vendor/normalize.scss";
 @import "scaffolding.scss";
+
+@import "blocks/container.scss";
+
+// Мелкие блоки
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/logo-link.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/phone.scss";
+@import "blocks/phone-header.scss";
+@import "blocks/burger.scss";
+@import "blocks/next-travels.scss";
+@import "blocks/contacts.scss";
+@import "blocks/email.scss";
+@import "blocks/corporate-travels.scss";
+@import "blocks/place-card.scss";
+@import "blocks/tabs-names.scss";
+@import "blocks/tab-content.scss";
+@import "blocks/review.scss";
+@import "blocks/author.scss";
+@import "blocks/plan.scss";
+@import "blocks/prices-contacts.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/modal-form.scss";
+
+// Крупные блоки
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/main-block.scss";
+@import "blocks/places.scss";
+@import "blocks/places-details.scss";
+@import "blocks/prices.scss";
+@import "blocks/feedback.scss";
+@import "blocks/modal.scss";
